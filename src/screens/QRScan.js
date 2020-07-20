@@ -43,7 +43,7 @@ class QRScan extends Component {
         })
             .then(res => res.json())
             .then(json_res => {
-                console.log("res", json_res)
+                
                 this.setState({ isLoading: false })
                 if (json_res.status == "Fail") {
                     alert("Something went wrong")
@@ -65,7 +65,6 @@ class QRScan extends Component {
 
     render() {
         let { card, isLoading } = this.state
-        console.log("card", card)
         let back = "<"
         return (
             <View style={{ flex: 1 }}>

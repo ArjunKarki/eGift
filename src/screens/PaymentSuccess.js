@@ -45,7 +45,6 @@ class PaymentSuccess extends Component {
                 });
             } catch (error) {
                 alert("fail to share.")
-                console.log("eror", error)
             }
         }
 
@@ -63,7 +62,6 @@ class PaymentSuccess extends Component {
         let back = "<"
 
         let { pin_code } = this.state
-        console.log("pay", pin_code)
 
         return (
 

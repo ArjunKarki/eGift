@@ -42,8 +42,7 @@ class Home extends Component {
     }
 
     toQrScan = (card) => {
-
-        console.log("id", card._id)
+        
         this.setState({ isLoading: true })
         let url = Config.apiUrl + "/purchaseCard"
 
